@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:Dual_Gigavac_Contactor_Simulator_v1.0-cache
 EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Dual Gigavac Contactor Simulator v1.0"
-Date "2020-06-27"
+Date "2020-07-08"
 Rev "1.0"
 Comp "Illini Solar Car"
 Comment1 "Designed By: Jonathan Mullen"
