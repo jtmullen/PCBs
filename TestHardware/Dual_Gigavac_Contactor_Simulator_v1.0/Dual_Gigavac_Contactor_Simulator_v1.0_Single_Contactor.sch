@@ -1,0 +1,134 @@
+EESchema Schematic File Version 4
+LIBS:Dual_Gigavac_Contactor_Simulator_v1.0-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 2 2
+Title "Dual Gigavac Contactor Simulator v1.0 - Single Contactor"
+Date "2020-06-27"
+Rev ""
+Comp "Illini Solar Car"
+Comment1 "Designed By: Jonathan Mullen"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5EF7A0E0
+P 3050 3700
+F 0 "J?" H 2970 3375 50  0000 C CNN
+F 1 "Contactor Driver" H 2970 3466 50  0000 C CNN
+F 2 "" H 3050 3700 50  0001 C CNN
+F 3 "~" H 3050 3700 50  0001 C CNN
+	1    3050 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5EF7A139
+P 7550 3600
+F 0 "J?" H 7630 3592 50  0000 L CNN
+F 1 "Contactor Sense" H 7630 3501 50  0000 L CNN
+F 2 "" H 7550 3600 50  0001 C CNN
+F 3 "~" H 7550 3600 50  0001 C CNN
+	1    7550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Discrete_SMD:Q_NMOS_DUAL_SGD Q?
+U 1 1 5EF7A1ED
+P 4600 3700
+F 0 "Q?" H 4805 3746 50  0000 L CNN
+F 1 "Q_NMOS_DUAL_SGD" H 4805 3655 50  0000 L CNN
+F 2 "" H 4800 3800 50  0001 C CNN
+F 3 "~" H 4600 3700 50  0001 C CNN
+	1    4600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Discrete_SMD:Q_NMOS_DUAL_SGD Q?
+U 2 1 5EF7A234
+P 5900 3700
+F 0 "Q?" H 6105 3746 50  0000 L CNN
+F 1 "Q_NMOS_DUAL_SGD" H 6105 3655 50  0000 L CNN
+F 2 "" H 6100 3800 50  0001 C CNN
+F 3 "~" H 5900 3700 50  0001 C CNN
+	2    5900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EF7A33C
+P 4700 2950
+F 0 "#PWR?" H 4700 2800 50  0001 C CNN
+F 1 "+3V3" H 4715 3123 50  0000 C CNN
+F 2 "" H 4700 2950 50  0001 C CNN
+F 3 "" H 4700 2950 50  0001 C CNN
+	1    4700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5EF7A390
+P 4700 3200
+F 0 "R?" H 4770 3246 50  0000 L CNN
+F 1 "R" H 4770 3155 50  0000 L CNN
+F 2 "" V 4630 3200 50  0001 C CNN
+F 3 "~" H 4700 3200 50  0001 C CNN
+	1    4700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2950 4700 3050
+Wire Wire Line
+	4700 3350 4700 3500
+Wire Wire Line
+	4700 3900 4700 4150
+Wire Wire Line
+	4700 4150 6000 4150
+Wire Wire Line
+	6000 4150 6000 3900
+Wire Wire Line
+	7350 3600 6900 3600
+Wire Wire Line
+	6000 4150 6900 4150
+Wire Wire Line
+	6900 3700 7350 3700
+Connection ~ 6000 4150
+$Comp
+L device:R R?
+U 1 1 5EF7A557
+P 6900 3950
+F 0 "R?" H 6970 3996 50  0000 L CNN
+F 1 "R" H 6970 3905 50  0000 L CNN
+F 2 "" V 6830 3950 50  0001 C CNN
+F 3 "~" H 6900 3950 50  0001 C CNN
+	1    6900 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4150 6900 4100
+Wire Wire Line
+	6900 3700 6900 3800
+$Comp
+L Discrete_SMD:Q_NMOS_DUAL_SGD Q?
+U 1 1 5EF7AE5B
+P 5900 2900
+F 0 "Q?" H 6105 2946 50  0000 L CNN
+F 1 "Q_NMOS_DUAL_SGD" H 6105 2855 50  0000 L CNN
+F 2 "" H 6100 3000 50  0001 C CNN
+F 3 "~" H 5900 2900 50  0001 C CNN
+	1    5900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2500 6000 2500
+Wire Wire Line
+	6000 2500 6000 2700
+Wire Wire Line
+	6900 2500 6900 3600
+Wire Wire Line
+	6000 3100 6000 3500
+$EndSCHEMATC
