@@ -8,23 +8,26 @@
 - Other board integration
 	- PDS/BMS/other (contactor Driver and Aux Sense)
 	- Test Controller (Digital Signals)
-- Wiki page: [add link to page]
+- [Wiki page](https://wiki2.illinisolarcar.com/w/index.php/Dual_Contactor_Simulator)
 
 ## High-Level Requirements
 - This board must simulate two Gigavac contactors
 - The test controller should be able to simulate welded and broken contactors
 - It should require the input power be within the valid range for the contactor
 - Provide sensing back to the board being tested similar to the auxillary contacts
+- Can be populated to simulate either a Normally Closed or Normally Open Contactor
 
 ## Truth Table
+Generic Table for either NC or NO
 +------------+------+------+------+------+
 |Enable/Weld |  00  |  01  |  11  |  10  |
 +------------+------+------+------+------+
-| Driver OFF |   0  |   1! |   1! |   0  | 
-| Driver ON  |   0* |   1  |   1  |   1  | 
+| Driver OFF |   N  |   W  |   W  |   N  | 
+| Driver ON  |   F  |   N  |   N  |   N  | 
 +------------+------+------+------+------+
-* Should detect issue with contactor
-! Should detect welded contactor
+N: Normal Operation
+F: Should detect issue with contactor
+W: Should detect welded contactor
 
 ## Connectors
 - Contactor 1 Control (KK 2.54 2 Pin)
@@ -46,7 +49,7 @@
 	- Weld 2
 
 ## Buttons/Switches
-- Buttons to manually cause all above conditions
+- Buttons to manually enable or weld
 
 ## Power System
 - 12V Contactor Control from each driver
@@ -55,6 +58,7 @@
 ## Test Points
 - MOSFET Inputs
 - Power/GND
+- Contactor Sense Output
 
 ## LED Indicators
 - Contactor 1 Power
