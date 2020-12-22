@@ -161,17 +161,6 @@ F 3 "~" H 1500 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0104
-U 1 1 5FD28C9A
-P 2000 4000
-F 0 "#PWR0104" H 2000 3750 50  0001 C CNN
-F 1 "GND" H 2005 3827 50  0000 C CNN
-F 2 "" H 2000 4000 50  0001 C CNN
-F 3 "" H 2000 4000 50  0001 C CNN
-	1    2000 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L device:Net-Tie_2 NT1
 U 1 1 5FD29217
 P 2000 3800
@@ -182,8 +171,6 @@ F 3 "~" H 2000 3800 50  0001 C CNN
 	1    2000 3800
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2000 4000 2000 3900
 Wire Wire Line
 	2000 3700 2000 3600
 Wire Wire Line
@@ -380,4 +367,17 @@ Wire Wire Line
 Connection ~ 1450 1500
 Wire Wire Line
 	1450 1500 1450 1650
+Wire Wire Line
+	2000 4000 2000 3900
+$Comp
+L power:GND #PWR0104
+U 1 1 5FD28C9A
+P 2000 4000
+F 0 "#PWR0104" H 2000 3750 50  0001 C CNN
+F 1 "GND" H 2005 3827 50  0000 C CNN
+F 2 "" H 2000 4000 50  0001 C CNN
+F 3 "" H 2000 4000 50  0001 C CNN
+	1    2000 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
